@@ -1,0 +1,31 @@
+.body {
+  float: none;
+margin: 0 auto;
+font-family: 'Playfair Display SC', serif;
+}
+
+.jumbotron {
+  background-color : FDFDFD;
+  text-align : center;
+  font-size : 1.75rem;
+  font-family: 'Playfair Display SC', serif;
+}
+
+#wikiDiv {
+  text-align : center;
+font-family: 'Playfair Display SC', serif;
+}
+
+.lucky {
+  margin-top: 10px;
+  margin-bottom : -10px;
+}
+
+.form-group {
+  padding-top: 5px;
+}
+
+.footer {
+  text-align : center;
+  font-family: 'Playfair Display SC', serif;
+}
