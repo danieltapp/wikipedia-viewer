@@ -12,12 +12,19 @@ $(document).ready(function(){
         console.log(url);
         wikiElem.empty();
         for(i=0; i < data[1].length; i++){
-          wikiElem.append(`<a href="${data[3][i]}" target="#" class="list-group-item list-group-item-action flex-column align-items-start">
-        <div class="d-flex w-100 justify-content-between">
-          <h3 class="mb-1">${data[1][i]}</h3>
-        </div>
-        <p class="mb-1">${data[2][i]}</p>
-      </a>`);
+          wikiElem.append(`
+  <div class="ui items">
+  <div class="item">
+    <div class="content">
+      <a href="${data[3][i]}" target="#" class="ui header">${data[1][i]}</a>
+      <div class="description">
+        <p>${data[2][i]}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui hidden divider"></div>
+`);
         }
       });
       return false;

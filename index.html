@@ -4,50 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WikiViewer</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <title>Wiki Detective</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css'>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hanalei+Fill" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
-        <div class="containter container-fluid">
-                <div class="jumbotron">
-                  <img src='https://en.wikipedia.org/static/images/project-logos/enwiki.png'></img>
-                      <form class="form-inline" data-ajax='false' action=''>
-              <div class="form-group mx-sm-3 mb-2">
-                <label for="search" class="sr-only"></label>
-                <input type="text" class="form-control" id="inputText" placeholder="Search...">
-              </div>
-              <button id='searchButton' type="submit" class="btn btn-info mb-2">
-                <i class="fas fa-search-plus"></i>
-                <i class="fab fa-wikipedia-w"></i>
-                        </button>
-              
-            </form>
-                  <div class="containter lucky">
-                    <a href="https://en.wikipedia.org/wiki/Special:Random" target="#"> Feeling lucky? <i class="fas fa-beer"></i></a>
-                  </div>
-                </div>
-             <div class="containter container-fluid">
-                   <div class='col-md-4'>
-               </div>
-               <div class='col-md-4'>
-                  <div id='wikiDiv'>
-               <div class="list-group">
-               </div>
-               </div>
-               </div>
-               <div class='col-md-4'>
-               </div>
-                </div>
-              </div>
-              </div>
-            <footer class='footer'>
-                 Made by <a href='https://github.com/danieltapp'>DT</a>. 2018.
-               </footer>
+    <div class="ui container center aligned">
+      <div class="wikiHeader">
+        <h1 class="hanalei">! Wiki
+          <i class="fas fa-search-plus"></i>
+          Detective !</h1>
+      </div>
+    </div>
+    
+    <div class="ui container center aligned">
+      <form class="ui form" data-ajax='false' action=''>
+        <div class="ui form">
+          <div class="ui fluid search">
+            <input type="text" class="ui input" id="inputText" placeholder="Search...">
+          </div>
+        </div>
+        <button id='searchButton' type="submit" class="ui secondary basic button">
+          <i class="fas fa-search-plus"></i>
+          <i class="fab fa-wikipedia-w"></i>
+        </button>
+    
+      </form>
+      <div class="ui containter lucky">
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="#" class="hanalei"> Feeling lucky?
+          <i class="fas fa-beer"></i>
+        </a>
+      </div>
+    </div>
+    <div class="ui containter">
+      <div id='wikiDiv' class="ui items">
+      </div>
+    </div>
+    </div>
+    </div>
+    <footer class='footer'>
+      Made by
+      <a href='https://github.com/danieltapp' target="#">DT</a>. 2018.
+    </footer>
 </body>
 </html>
